@@ -11,14 +11,14 @@
         "space": false,
         "args": "Optional",
         "script": "src/password.js",
-        "connections": ["GoHome"]
+        "connections": ["Copy"]
       }
     ],
     "output": [
       {
-        "id": "GoHome",
-        "type": "OpenInBrowser",
-        "url": "https://github.com/tinytacoteam/zazu-template"
+        "id": "Copy",
+        "type": "CopyToClipboard",
+        "text": "{value}"
       }
     ]
   }

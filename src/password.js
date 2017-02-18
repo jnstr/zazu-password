@@ -56,6 +56,7 @@ module.exports = (pluginContext) => {
                     icon: 'fa-key',
                     title: password,
                     subtitle: `We generated a ${strength} password of ${length} characters`,
+                    value: password,
                 },
             ])
         })
