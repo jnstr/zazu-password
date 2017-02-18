@@ -6,10 +6,21 @@ module.exports = (pluginContext) => {
         let length = 16,
             strength = 'average';
 
+        // all possible values for the password strenth
+        const strengthOptions = ['easy','weak', 'normal', 'average', 'hard', 'strong'];
+
+        // check if we need to override the length & strength
+        if (env['strength'] && strengthOptions.includes(env['strength'])) {
+            strength = env['strength'];
+        }
+        if (env['length'] && !isNaN(parseFloat(env['length'])) && isFinite(env['length'])) {
+            length = env['length']
+        }
+
         // get the length & strenth from the query (this should be optimized)
         const terms = query.split(' ');
         const lengths = terms.filter(term => (!isNaN(parseFloat(term)) && isFinite(term)));
-        const strengths = terms.filter(term => ['easy','weak', 'normal', 'average', 'hard', 'strong'].includes(term.toLowerCase()));   
+        const strengths = terms.filter(term => strengthOptions.includes(term.toLowerCase()));   
         if (lengths.length) {
             length = lengths[0];
         }
