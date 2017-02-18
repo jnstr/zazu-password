@@ -1,7 +1,7 @@
 {
-  "name": "zazu-template",
+  "name": "zazu-password",
   "version": "1.0.0",
-  "description": "Zazu Template for starting your own plugin.",
+  "description": "Zazu plugin for generating passwords with ease.",
   "blocks": {
     "input": [
       {
