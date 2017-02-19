@@ -53,7 +53,7 @@ module.exports = (pluginContext) => {
         return new Promise((resolve, reject) => {
             resolve([
                 {
-                    icon: 'fa-key',
+                    icon: 'assets/icon.png',
                     title: password,
                     subtitle: `We generated a ${strength} password of ${length} characters`,
                     value: password,
