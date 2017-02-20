@@ -6,10 +6,7 @@
     "input": [
       {
         "id": "password",
-        "type": "PrefixScript",
-        "prefix": "password",
-        "space": false,
-        "args": "Optional",
+        "type": "RootScript",
         "script": "src/password.js",
         "connections": ["Copy"]
       }
