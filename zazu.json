@@ -1,24 +1,21 @@
 {
   "name": "zazu-password",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Zazu plugin for generating passwords with ease.",
   "blocks": {
     "input": [
       {
         "id": "password",
-        "type": "PrefixScript",
-        "prefix": "password",
-        "space": false,
-        "args": "Optional",
-        "script": "src/password.js",
+        "type": "RootScript",
+        "script": "src/input.js",
         "connections": ["Copy"]
       }
     ],
     "output": [
       {
         "id": "Copy",
-        "type": "CopyToClipboard",
-        "text": "{value}"
+        "type": "UserScript",
+        "script": "src/password.js"
       }
     ]
   }
