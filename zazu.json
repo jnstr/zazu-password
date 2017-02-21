@@ -7,15 +7,15 @@
       {
         "id": "password",
         "type": "RootScript",
-        "script": "src/password.js",
+        "script": "src/input.js",
         "connections": ["Copy"]
       }
     ],
     "output": [
       {
         "id": "Copy",
-        "type": "CopyToClipboard",
-        "text": "{value}"
+        "type": "UserScript",
+        "script": "src/password.js"
       }
     ]
   }
