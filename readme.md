@@ -67,3 +67,6 @@ If you really really want to see the generated password in zazu, you can add the
 ## Screenshots
 
 ![Zazu password](./assets/screenshot.png)
+
+insecure password:  
+![Zazu password insecure](./assets/screenshot-insecure.png)
