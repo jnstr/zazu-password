@@ -48,7 +48,7 @@ The plugin defaults to an average password of 16 characters, but you can overrid
 Since all results that are displayed and returned by a Zazu plugin are stored in the log files, it's insecure to display and render the generated password in zazu. This is the reason why we don't show the generated password in the plugin.  
 The password is generated in the plugin but is never handled by Zazu which makes it more secure.
 
-If you really really want to see the generated password in zazu, you can add the "insecure" variable to the `~/.zazurc.json` file and set it to true.
+If you really really want to see the generated password in zazu, you can add the "insecure" option to the plugin config in `~/.zazurc.json` and set it to true.
 
 ```json
 {
